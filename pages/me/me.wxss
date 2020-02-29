@@ -1,0 +1,95 @@
+/* pages/find/find.wxss */
+page{
+  width:100%;
+  height:97%;
+}
+
+.mePage{
+  width: 100%;
+  height: 100%;
+}
+
+.meTop{
+  width: 100%;
+  height: 36%;
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1581667119722&di=7dff19d96e116b424805c281e784caa3&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181219%2F7f4ff580d38643a08e5ad6d6f9585294.jpeg');
+  padding-top: 8%;
+}
+
+.userInfo{
+  margin: 0 auto;
+  width: 80%;
+  height: 70%;
+  text-align: center
+}
+
+.avataView{
+  border-radius: 30rpx;
+  width: 240rpx;
+  height: 240rpx;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.userAvatar{
+  width: 240rpx;
+  height: 240rpx;
+}
+
+.userName{
+  margin-top: 60rpx;
+  font-size: 36rpx;
+}
+
+.btnView{
+  margin: 0 auto;
+  margin-top: 3%;
+  width: 150rpx;
+  height: 60rpx;
+}
+
+.getInfoButton{
+  width: 100%;
+  height: 100%;
+  background-color: #ff5777;
+  color: rgba(253, 245, 245, 0.986);
+  line-height: 60rpx;
+  font-size: 36rpx;
+}
+
+.logoutBtn{
+  width: 100%;
+  height: 100%;
+  background-color: #ff5777;
+  color: rgba(253, 245, 245, 0.986);
+  line-height: 60rpx;
+  font-size: 36rpx; 
+}
+
+.meBottom{
+  width: 100%;
+  height: 48%;
+  background-color: #fff;
+  padding-top: 16%;
+}
+
+.eachItem{
+  height: 10%;
+  padding-left: 5%;
+  margin-bottom: 10%;
+}
+
+.eachItemImage{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 30rpx;
+  float: left;
+}
+
+.eachItemText{
+ padding-top: 5rpx;
+}
+
+.contenttext{
+  margin-right: 440rpx
+}

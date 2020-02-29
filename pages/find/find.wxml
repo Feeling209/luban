@@ -1,0 +1,37 @@
+<!--pages/find/find.wxml-->
+<view class="find">
+  <swiper class="swiperClass" previous-margin="50rpx" next-margin="64rpx" circular="{{true}}" bindchange="swiperchange">
+    <swiper-item class="swiperItem" wx:for='{{allContent}}' wx:key='id'>
+      <view class="cardTable" wx:if="{{item.display}}" >
+        <view class="cardView">
+          <image src="/assets/images/pure_bg/{{item.randomcard}}" class="cardImage"></image>
+        </view>
+        <view class="textView">
+          <text class="textContent">{{item.content}}</text>
+        </view>
+        <view class="textView2">
+          <text class="textNickname">{{item.nickname}}</text>
+        </view>
+        <view class="textView3">
+          <text class="textTime">{{item.time}}</text>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+  
+  <view class="findBottom">
+    <view class="message" bindtap="callta">
+      <image src="/assets/images/call.png" class="messageImg"></image>
+    </view>
+    <view class="sixinta" bindtap="callta">
+      <image src="/assets/images/lianxita.png" class="sixintaImg" ></image>
+    </view>
+
+    <view class="release" bindtap="toRelease">
+      <image src="/assets/images/add.png" class="releaseImg"></image>
+    </view>
+    <view class="fabu" bindtap="toRelease">
+      <image src="/assets/images/fabu.png" class="fabuImg"></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,63 @@
+<!--pages/me/me.wxml-->
+<view class="mePage">
+  <view class='meTop'>
+    <view class="userInfo" wx:if="{{showModel}}">
+      <image src="/assets/images/default_avatar.png" class="userAvatar"></image>
+      <!-- <view class="userName">
+        <text>未知用户</text>
+      </view> -->
+    </view>
+    <view class="userInfo" wx:if="{{showModel2}}">
+      <view class="avataView">
+        <image src="{{userInfo.avatarUrl}}" class="userAvatar"></image>
+      </view>
+      <view class="userName">
+        <text >{{userInfo.nickName}}</text>
+      </view>
+    </view>
+    <view class="btnView" wx:if="{{showModel3}}">
+      <button open-type="getUserInfo" class="getInfoButton" bindgetuserinfo='getUserInfo'>
+      登 录
+      </button>
+    </view>
+    <!-- <view class="'btnView'" wx:if="{{showModel4}}">
+      <button class="logoutBtn">退 出</button>
+    </view> -->
+  </view>
+  <view class="meBottom">
+    <view class="eachItem" bindtap='toMyRelease'>
+      <image src="/assets/images/my_release.png" class="eachItemImage"></image>
+      <view class="eachItemText" >
+        <text class="contenttext">我的发布</text>
+        <text>></text>
+      </view>
+    </view>
+
+    <view class="eachItem">
+      <image src="/assets/images/my_mailbox.png" class="eachItemImage"></image>
+      <view class="eachItemText" bindtap="toMailbox">
+        <text class="contenttext">我的邮箱</text>
+        <text>></text>
+      </view>
+    </view>
+
+    <view class="eachItem" bindtap='toAboutLuban'>
+      <image src="/assets/images/about_luban.png" class="eachItemImage"></image>
+      <view class="eachItemText">
+        <text class="contenttext">关于撸班</text>
+        <text>></text>
+      </view>
+    </view>
+
+    <view class="eachItem" bindtap="toReview" wx:if="{{review}}">
+      <image src="/assets/images/review.png" class="eachItemImage"></image>
+      <view class="eachItemText">
+        <text class="contenttext">等我审核</text>
+        <text>></text>
+      </view>
+    </view>
+
+  </view>  
+</view>
+
+

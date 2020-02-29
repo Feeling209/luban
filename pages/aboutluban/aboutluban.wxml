@@ -1,0 +1,8 @@
+<!--pages/aboutluban/aboutluban.wxml-->
+<view class="upperView">
+  <image src="/assets/images/blackboard.jpg" class="blackboard"></image>
+  <text class="content">撸班作为个人开发者开发的小程序，很多权限受限，并不能让大家直接发布调班信息，也不能让大家互相私信，希望大家理解，我会认真审核大家提交给我的信息，节约大家互联网资源使用与搜索的成本。在使用过程中，大家有什么建议，或遇到什么问题，可以添加下方的二维码，与我交流，谢谢大家的支持！</text>
+</view>
+<view class="qrCode">
+  <image src="/assets/images/QR_code.jpg" class="erweima"></image>
+</view>

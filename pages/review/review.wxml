@@ -1,0 +1,31 @@
+<!--pages/review/review.wxml-->
+<view class="allRelease" wx:for='{{allContent}}' wx:key='id'>
+  <view class="cardTable">
+    <view class="cardView">
+      <image src="/assets/images/pure_bg/{{item.randomcard}}" class="cardImage"></image>
+    </view>
+
+    <view class="textView">
+      <text class="textContent">{{item.content}}</text>
+    </view>
+    <view class="textView2">
+      <text class="textNickname">{{item.nickname}}</text>
+    </view>
+    <view class="textView3">
+      <text class="textTime">{{item.time}}</text>
+    </view>
+    <view class="textView4">
+      <text class="textLianxi">{{item.lianxi}}</text>
+    </view>
+
+    <view class="anniu">
+      <view class="passView" bindtap="passCard" data-id="{{item.id}}">
+        <image src="/assets/images/pass.jpg" class="passImg"></image>
+      </view>
+      <view class="deleteView" bindtap="deleteCard" data-id="{{item.id}}">
+        <image src="/assets/images/bin.png" class="deleteImg"></image>
+      </view>
+    </view>
+    
+  </view>
+</view>

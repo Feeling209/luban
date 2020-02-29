@@ -1,0 +1,38 @@
+/* pages/aboutluban/aboutluban.wxss */
+pages{
+  width: 100%;
+  height: 100%;
+}
+
+.upperView{
+  width: 100%;
+  text-align: center;
+  margin-top: 12%;
+  position: relative;
+}
+
+.blackboard{
+  width: 100%;
+  height: 720rpx;
+}
+
+.content{
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+  line-height: 56rpx;
+}
+
+.qrCode{
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+}
+
+.erweima{
+  width: 300rpx;
+  height: 300rpx;
+}

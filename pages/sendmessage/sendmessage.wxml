@@ -1,0 +1,10 @@
+<!--pages/add/add.wxml-->
+<!-- <view class="sendMessagePage">
+  <view class="sendMessageBgView">
+    <image src="/assets/images/写私信背景.jpg" class='sendMessageBgImg'></image>
+  </view>
+  <form bindsubmit='formSubmit' class="messageForm">
+    <textarea placeholder='请输入发送给{{duifangNickname}}的内容' name='content'></textarea>
+    <button class="submitBtn"  formType="submit">发 送</button>
+  </form>
+</view> -->

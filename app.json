@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/find/find",
+    "pages/release/release",
+    "pages/hours/hours",
+    "pages/me/me",
+    "pages/mailbox/mailbox",
+    "pages/sendmessage/sendmessage",
+    "pages/myrelease/myrelease",
+    "pages/aboutluban/aboutluban",
+    "pages/review/review"
+  ],
+
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eee"
+  },
+
+  "tabBar": {
+    "selectedColor": "#1296DB",
+    "list": [{
+      "pagePath": "pages/find/find",
+      "text": "发现",
+      "iconPath": "/assets/images/find.png",
+      "selectedIconPath": "/assets/images/find_select1.png"
+    },
+
+    {
+      "pagePath": "pages/hours/hours",
+      "text": "工时",
+      "iconPath": "/assets/images/hours.png",
+      "selectedIconPath": "/assets/images/hours_select1.png"
+    },
+    {
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "/assets/images/me.png",
+      "selectedIconPath": "/assets/images/me_select1.png"
+    }
+    ]
+  },
+  
+
+  "sitemapLocation": "sitemap.json"
+}

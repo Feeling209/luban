@@ -1,0 +1,78 @@
+/* pages/hours/hours.wxss */
+page {
+  background-color: #fbf9fe;
+  height: 90%;
+}
+
+.page__bd{
+  margin-top: 11%;
+}
+
+.section{
+    margin-bottom: 12%;
+}
+.section__title{
+    margin-bottom: 16rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+.picker{
+  padding: 5%;
+  background-color: #FFFFFF;
+}
+
+
+.titleImg{
+  width: 150rpx;
+  height: 150rpx;
+  float: left
+}
+
+.titleText{
+  padding-left: 20rpx;
+}
+
+.pickerText{
+  padding-left: 20rpx;
+}
+
+.submitBtn{
+  width: 260rpx;
+  height: 90rpx;
+  text-align: center
+}
+
+.biaozhu{
+  position: fixed;
+  top: 18%;
+  width: 100%;
+  height: 60rpx;
+}
+
+.biaozhuImg{
+  width: 100%;
+  height: 60rpx;
+  }
+
+.calendarView{
+  position: fixed;
+  top: 28%;
+  width: 100%;
+}
+
+.calendarImg{
+  width: 100%
+}
+
+.closeView{
+  position: fixed;
+  bottom: 12%;
+  text-align: center;
+  width: 100%;
+}
+
+.closeImg{
+  width: 90rpx;
+  height: 90rpx;
+}
+

@@ -1,0 +1,87 @@
+/* pages/add/add.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.addPage{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.releaseForm{
+  width: 100%;
+}
+.releaseBgView{
+  position: relative;
+  width: 100%;
+}
+
+.releaseBgImg{
+  width: 100%;
+  height: 440rpx;
+}
+.mainContent{
+  position: absolute;
+  top: 43%;
+  left: 15%;
+  width:70%;
+  height: 50%;
+  margin: 0 auto;
+  /* border: 2px solid gray; */
+}
+
+.lianxi{
+  position: relative;
+  width: 100%;
+  margin-top: 3%;
+  text-align: center;
+}
+.lianxiImg{
+  width: 72%;
+  height: 120rpx;
+}
+.lianxiContent{
+  position: absolute;
+  top: 9%;
+  left: 15%;
+  width: 70%;
+  height: 90rpx;
+}
+.submitBtn{
+  width: 150rpx;
+  height: 60rpx;
+  background-color: #ff5777;
+  margin: 0 auto;
+  margin-top: 4%;
+  font-size: 36rpx;
+  line-height: 60rpx;
+  color: whitesmoke;
+}
+.tipView{
+  width: 100%;
+  position: fixed;
+  bottom: 1%;
+}
+.tipBgImg{
+  width: 120%;
+  height: 350rpx;
+  margin-left: -24%
+}
+.tipText{
+  position: absolute;
+  margin-right: 12%;
+  left: 26%;
+  top: 24%;
+}
+.bottomTip{
+  width: 100%;
+  position: absolute;
+  bottom: 1%;
+  padding-left: 5%;
+  text-align: center;
+}
+
+.bottomTipImage{
+  width: 100%;
+  height: 200rpx;
+}

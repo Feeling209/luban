@@ -1,0 +1,55 @@
+<!--pages/mailbox/mailbox.wxml-->
+<view class="aboutMail">
+  <!-- <swiper class="swiperClass" circular="{{true}}" style="height:{{currentHeight}}rpx;" bindchange="swiperchange">
+    <swiper-item class="swiperItem"> -->
+      <view class="aboutReceive">
+        <view class="aboutHeader">
+          <image src="/assets/images/shoujian.png" class="receiveImg"></image>
+          <!-- <image src="/assets/images/to已发私信.png" class="toYifa" bindtap="toYifa"></image> -->
+        </view>
+        <view wx:for="{{allReceiveContent}}" wx:key='id' wx:if="{{showAll}}">
+          <view class="xinView" bindtap="openXin" data-id="{{item.id}}" data-name='{{item.sourceNickname}}' data-time='{{item.time}}' data-content="{{item.content}}" data-openid="{{item.sourceOpenid}}" wx:if="{{item.destinationOpenId===yourOpenid}}">
+            <image src="/assets/images/letter_paper.jpg" class="xin" ></image>
+            <text class="who">{{item.sourceNickname}}的来信</text>
+            <text class="time">{{item.time}}</text>
+            <text class="thing">{{item.content}}</text>
+            <text class="source_openid">{{item.sourceOpenid}}</text>
+          </view>
+        </view>
+
+        <view class="xinContentTable" wx:if="{{showSingle}}">
+          <image src="/assets/images/letter_paper2.jpg" class="xinContentImg"></image>
+          <view class="xinContentView"><text class="xinContentText">{{currentXinContent}}</text></view>
+          <!-- <image src="/assets/images/回复消息.png" class="response" bindtap="toResponse"></image> -->
+          <image src="/assets/images/close.png" class="close" bindtap="closeMessage"></image>
+          <image src="/assets/images/delete.png" class="delete" bindtap="deleteMessage"></image>
+        </view>
+      </view>
+    <!-- </swiper-item> -->
+
+    <!-- <swiper-item class="swiperItem">
+      <view class="aboutReceive">
+        <view class="aboutHeader">
+          <image src="/assets/images/已发私信.png" class="yifaImg"></image>
+          <image src="/assets/images/to收件箱.png" class="toReceive" bindtap="toYifa"></image>
+        </view>
+        <view wx:for="{{allSendContent}}" wx:key='id' wx:if="{{showAll}}">
+          <view class="xinView" bindtap="openXin" data-name='{{item.destinationNickname}}' data-time='{{item.time}}' data-content="{{item.content}}" data-openid="{{item.destinationOpenid}}" wx:if="{{item.sourceOpenid===yourOpenid}}">
+            <image src="/assets/images/已发信纸.jpg" class="xin" ></image>
+            <text class="who">发送给{{item.destinationNickname}}的信</text>
+            <text class="time">{{item.time}}</text>
+            <text class="thing">{{item.content}}</text>
+            <text class="destination_openid">{{item.destinationOpenid}}</text>
+          </view>
+        </view>
+
+        <view class="xinContentTable" wx:if="{{showSingle}}">
+          <image src="/assets/images/已发信纸透明.jpg" class="xinContentImg2"></image>
+          <view class="xinContentView"><text class="xinContentText">{{currentXinContent}}</text></view>
+          <image src="/assets/images/关闭.png" class="close2" bindtap="close"></image>
+        </view>
+      </view>
+    </swiper-item> -->
+
+  <!-- </swiper> -->
+</view>

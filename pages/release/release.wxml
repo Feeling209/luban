@@ -1,0 +1,22 @@
+<!--pages/add/add.wxml-->
+<view class="addPage">
+  <form bindsubmit='formSubmit' class="releaseForm">
+    <view class="releaseBgView">
+      <image src="/assets/images/release_bg.png" class='releaseBgImg'></image>
+      <textarea class="mainContent" placeholder='您所提交内容会先进入管理员邮箱，并不能直接显示在首页，审核通过后，由管理员统一发布。' name='content'></textarea>
+    </view>
+    <view class="lianxi">
+      <image src="/assets/images/lianxi.png" class='lianxiImg'></image>
+      <textarea class="lianxiContent" placeholder='请提供一种可以快速联系您的方式，建议集团短号' name='lianxi'></textarea>
+    </view>
+    <button class="submitBtn"  formType="submit">提 交</button>
+  </form>
+  
+  <view class="bottomTip">
+    <image src="/assets/images/mengmeizi.png" class="bottomTipCImage"></image>
+  </view>
+  <!-- <view class="tipView">
+    <image src="/assets/images/release_tip.jpg" class='tipBgImg'></image>
+    <text class="tipText">为防止出现无关信息，增加大家的搜索成本，所提交内容由管理员审核后帮大家发布，审核时长不超过一小时</text>
+  </view> -->
+</view>
